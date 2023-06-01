@@ -4,50 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>trackplayer</title>
 </head>
 <body>
-    <style>
-        img{
-            margin: 20px;
-        }
-        h3{
-            margin-left: 90px;
-            margin-top: -35px;
-        }
-        table,th{
-            margin-left: 1200px;
-            margin-top: -70px;
-        }
-        img{
-            margin-top: -10px;
-        }
-        p{
-            margin-left: 100px;
-        }
-        h4{
-            margin-left: 1200px;
-        }
-    </style>
-    <img src="images/taste.png " height="100" width="300" alt="">
-    <h3>serving since 1991</h3>
-    <table cellspacing="20">
-        <tr>
-            <th><a href="restaurant.html">Home</a></th>
-            <th> <a href="menu.html">Menu</a></th>
-            <th><a href="comtact.html">Contact</a></th>
+    <div class="player-container">
+        <div class="image-container">
+            <img src="images/kushi img.jpg" >
+        </div>
+        <h2>Na roja nuve</h2>
+        <h3>Abdul Wahad</h3>
+        <audio src="songs/Na Roja Nuvve.mp3"></audio>
+        <div class="progess-container">
+            <div>
+                <span id="starting">0:00</span>
+                <span id="duration">1:02</span>
+            </div>
+            <div id="progress"></div>
+        </div>
 
-        </tr>
-    </table>
-    <img src="images/img wall.jpg" alt="">
-    <center><h1>Welcome to Taste Of India</h1></center>
-    <p>As Taste of India,we offer most authentic Indian dishes which have evovled over centuries to perfection.
-        Each dish is prepared with a variety of spices and ingredients to create a distinct and individual flavor. For centuries, some of these spices have been prescribed for their health imparting qualities and ancient healing properties. 
-        Our fresh ingredients are skillfully cooked to preserve a low fat, high nutritional value, and prepared for your taste, from mild to medium, to hot. All entrees are also served with authentic Basmati rice. Drop off catering available.
-    </p> 
-    <h4>Contact Us
-        Tel:716-837-0460
-        Fax:716-837-3283
-        Address:3192 Sheridan Drive,
-        Amherst, NY 14226M</h4>
+        <div class="player-controls">
+            <i class="fa-solid fa-backward" id="prev" title="prev"></i>
+            <i class="fa-solid fa-play" id="play" title="play"></i>
+            <i class="fa-solid fa-forward" id="next" title="next"></i>
+
+        </div>     
+    </div>
+    <script src="https://kit.fontawesome.com/19e2780047.js" crossorigin="anonymous"></script>
+</body>
 </html>
